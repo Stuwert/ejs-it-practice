@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of People</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Listing all people</h1>
+    <table>
+      <thead>
+        <tr>
+          <td>
+            first name
+          </td>
+          <td>
+            last name
+          </td>
+          <td>
+            date of birth
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i<all.length; i++) {%>
+          <tr>
+            <td>
+              <a href="#"><%=all[i]["first_name"] %></a>
+            </td>
+            <td>
+              <%=all[i]["last_name"] %>
+            </td>
+            <td>
+              <%=all[i]["date_of_birth"]%>
+            </td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
